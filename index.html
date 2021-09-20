@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+</head>
+
+<body>
+    <!-- 3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем 		
+				написать скрипт, который работает по следующему принципу:
+				* если a и b положительные, вывести их разность;
+				* если а и b отрицательные, вывести их произведение;
+				* если а и b разных знаков, вывести их сумму;
+				ноль можно считать положительным числом. -->
+
+
+    <script> //Первый вариант решения.
+        a = parseInt(prompt('Введите число a'));
+        b = parseInt(prompt('Введите число b'));
+
+        if (a >= 0 && b >= 0) {
+            alert(a - b);
+        }
+        else if (a < 0 && b < 0) {
+            alert(a * b);
+        }
+
+        else if ((a < 0 && b > 0) || (b < 0 && a > 0)) {
+            alert(a + b);
+        }
+
+    </script>
+
+    <script> //Второй вариант, через функцию. 
+        function variables(a, b) {
+            if (a >= 0 && b >= 0) {
+                console.log(a - b);
+            }
+            else if (a < 0 && b < 0) {
+                console.log(a * b);
+            }
+
+            else if ((a < 0 && b > 0) || (b < 0 && a > 0)) {
+                console.log(a + b);
+            }
+        }
+    </script>
+
+    <!-- Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15. (по желанию можно использовать рекурсию) -->
+    <script>
+        a = parseint(prompt('Введите число от 1 до 15'));
+        switch (a) {
+            case 1:
+                alert('Число 1');
+            case 2:
+                alert('Число 2');
+            case 3:
+                alert('Число 3');
+            case 4:
+                alert('Число 4');
+            case 5:
+                alert('Число 5');
+            case 6:
+                alert('Число 6');
+            case 7:
+                alert('Число 7');
+            case 8:
+                alert('Число 8');
+            case 9:
+                alert('Число 9');
+            case 10:
+                alert('Число 10');
+            case 11:
+                alert('Число 11');
+            case 12:
+                alert('Число 12');
+            case 13:
+                alert('Число 13');
+            case 14:
+                alert('Число 14');
+            case 15:
+                alert('Число 15');
+                break;
+            default:
+                alert('Неверное число');
+                break;
+        }
+    </script>
+
+    <!-- Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return. -->
+
+    <script>
+        var a = +prompt('Введите число a');
+        var b = +prompt('Введите число b');
+
+        function sum(a, b) {
+            return (a + b);
+        }
+
+        function minus(a, b) {
+            return (a - b);
+        }
+
+        function div(a, b) {
+            return (a / b);
+        }
+
+        function multi(a, b) {
+            return (a * b);
+        }
+
+    </script>
+
+</body>
+
+</html>
